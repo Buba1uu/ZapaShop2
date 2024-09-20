@@ -12,14 +12,12 @@ const searchButton = document.getElementById("searchButton");
 const searchInput = document.getElementById("searchInput");
 const searchResults = document.getElementById("searchResults");
 
-// Pantalla de carga
 window.onload = function () {
   setTimeout(() => {
     loader.classList.add('hidden');
   }, 1000);
 };
 
-// Manejo de Navegación
 homeLink.addEventListener('click', () => {
   mostrarContenido('Inicio', 'Bienvenido a la Página Interactiva');
 });
@@ -42,7 +40,6 @@ function mostrarContenido(titulo, contenido) {
   searchSection.classList.add('hidden');
 }
 
-// Productos
 document.getElementById('product1').addEventListener('click', () => {
     window.location.href = "producto1.html";
   });

@@ -18,7 +18,6 @@
     opacity: 0;
   }
   
-  /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -32,7 +31,6 @@ body {
   }
 
 
-/* Estilo para el logo */
 nav .logo img {
     height: 75px;
     width: auto;
@@ -40,13 +38,12 @@ nav .logo img {
     display: flex;
 }
 
-/* Menú de navegación */
 .menu {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Centra el menú de navegación */
+    justify-content: center;
 }
 
 .menu li {
