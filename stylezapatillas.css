@@ -1,0 +1,145 @@
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 1.5rem;
+    z-index: 1000;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+  
+  .hidden {
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  /* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+  
+  header {
+    background-color: hwb(0 31% 7%);
+    padding: 15px;
+    text-align: center;
+  }
+
+
+/* Estilo para el logo */
+nav .logo img {
+    height: 75px;
+    width: auto;
+    cursor: pointer;
+    display: flex;
+}
+
+/* Menú de navegación */
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra el menú de navegación */
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    text-decoration: underline;
+}
+  
+  #mainImageSection {
+    text-align: center;
+    max-width: 100%;
+  }
+  
+  #mainImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #productSection {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .product-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .product-item {
+    text-align: center;
+    margin: 15px;
+  }
+  
+  .product-img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .product-img:hover {
+    transform: scale(1.05);
+  }
+
+  #contentSection, #searchSection {
+    margin-top: 20px;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+}
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .menu li {
+      display: block;
+      margin: 10px 0;
+    }
+  }
