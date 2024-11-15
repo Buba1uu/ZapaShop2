@@ -77,34 +77,19 @@ document.getElementById('product1').addEventListener('click', () => {
   });
   
 
-searchButton.addEventListener('click', () => {
-  const query = searchInput.value.trim();
-  if (query === "") {
-    alert("Introduce un término de búsqueda.");
-    return;
-  }
 
-  fetch('data.json')
-    .then(response => response.json())
-    .then(data => {
-      const resultados = data.items.filter(item => item.includes(query));
-      searchResults.innerHTML = resultados.length
-        ? resultados.map(item => `<p>${item}</p>`).join('')
-        : '<p>No se encontraron resultados.</p>';
-    })
-    .catch(error => {
-      searchResults.innerHTML = '<p>Ocurrió un error en la búsqueda.</p>';
-    });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  fetch("productos.json")
-      .then(response => response.json())
-      .then(data => mostrarProductos(data))
-      .catch(error => console.error('Error al cargar los productos:', error));
-});
 
 let carrito = [];
+/* 
+funcion cargarInfo (nombreZapatilla) guarda el nombre en el carrito
+
+funcion guardarZapatilla () guarda el nombre de la zapatilla en sesion o localstorage
+
+funcion cargarCarrito () busca la información
+
+
+
+*/
 
 function mostrarProductos(productos) {
   const contenedor = document.getElementById('productos');
