@@ -23,6 +23,11 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.cargandogif {
+width: 50%;
+height: 50%;
+}
   
   header {
     background-color: hwb(0 31% 7%);
