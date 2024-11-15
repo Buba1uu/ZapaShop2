@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZapaShop Outlet</title>
-    <link rel="stylesheet" href="stylezapatillas.css">
+    <link rel="stylesheet" href="stylezapatillasjson.css">
 </head>
 <body>
 
@@ -34,7 +34,39 @@
             <img src="zapatillas/zapatillas.jpg" alt="Imagen Principal" id="mainImage">
             <h1 id="mainTitle">Catalogo Zapatillas</h1>
         </section>
-
+        <section id="productos" class="productos-container" style="margin-top: 0;">
+            <!-- Aquí se cargarán los productos -->
+        </section>
+       <!-- Modal para el carrito -->
+    <div id="carritoModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close-btn">&times;</span>
+            <h2>Carrito</h2>
+            <div id="productosCarrito"></div>
+            <div id="total"></div>
+            <button id="seleccionarMas">Seleccionar Más Productos</button>
+            <button id="procederPago">Proceder al Pago</button>
+        </div>
+    </div>
+    
+    <!-- Modal para el formulario de pago -->
+    <div id="pagoModal" class="modal">
+        <div class="modal-content">
+            <span id="closePagoModal" class="close-btn">&times;</span>
+            <h2>Formulario de Pago</h2>
+            <form id="formPago">
+                <label for="nombreTarjeta">Nombre en la tarjeta:</label>
+                <input type="text" id="nombreTarjeta" required><br>
+                <label for="numeroTarjeta">Número de tarjeta:</label>
+                <input type="text" id="numeroTarjeta" required><br>
+                <label for="fechaExpiracion">Fecha de expiración:</label>
+                <input type="month" id="fechaExpiracion" required><br>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" required><br><br>
+                <button type="submit">Realizar Pago</button>
+            </form>
+        </div>
+    </div>
 
         <section id="productSection">
             <h2>Sección Puma</h2>
@@ -97,6 +129,6 @@
         <p>© 2024 ZapaShop Outlet.</p>
     </footer>
 
-    <script src="scriptzapatillas.js"></script>
+    <script src="scriptzapatillasjson.js"></script>
 </body>
 </html>

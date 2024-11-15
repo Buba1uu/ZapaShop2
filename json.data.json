@@ -1,9 +1,11 @@
-{
-    "items": [
-      "Servicio de desarrollo web",
-      "Aplicaciones móviles",
-      "Diseño gráfico",
-      "Marketing digital",
-      "Consultoría tecnológica"
-    ]
+[
+  {
+    "nombre": "Botines FUTURE 7 ULTIMATE FG/AG",
+    "descripcion": "Botines de futbol",
+    "stock": 20,
+    "precio": 500,
+    "imagen": "ZapaShop2/zapatillas/zapatilla1.png",
+    "ancho": "200px",
+    "alto": "200px"
   }
+]
